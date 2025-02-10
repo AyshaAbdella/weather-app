@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family::Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #304040;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+:root{ 
+    --color-black:#000000;
+    --color-white:#ffffff;
+    --color-forest:#04202c;
+    --color-evergreen:#304040;
+    --color-pine:#5b7665;
+    --color-fog:#c9d1c8;
+    --color-blackseaweed:#231b12;
+    --color-pewter:#867666;
+
+
+
+}
+.container {
+    background: #304040;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+#cityInput::placeholder {
+    color: #666;
+}
+
+#searchBtn {
+    padding: 12px 20px;
+    background: #231b12;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s ease;
+}
+
+#searchBtn:hover {
+    background: #867666;
+}
+
+#weatherInfo {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.weather-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.weather-details {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.weather-details p {
+    margin: 10px 0;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #cityInput {
+        font-size: 14px;
+    }
+
+    #searchBtn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #weatherInfo {
+        font-size: 1rem;
+    }
+}
