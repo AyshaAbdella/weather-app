@@ -1,4 +1,25 @@
-/* General Styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #cityInput {
+        font-size: 14px;
+    }
+
+    #searchBtn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #weatherInfo {
+        font-size: 1rem;
+    }
+}
 body {
     font-family::Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: #304040;
@@ -9,19 +30,7 @@ body {
     align-items: center;
     height: 100vh;
 }
-:root{ 
-    --color-black:#000000;
-    --color-white:#ffffff;
-    --color-forest:#04202c;
-    --color-evergreen:#304040;
-    --color-pine:#5b7665;
-    --color-fog:#c9d1c8;
-    --color-blackseaweed:#231b12;
-    --color-pewter:#867666;
 
-
-
-}
 .container {
     background: #304040;
     padding: 30px;
@@ -100,25 +109,3 @@ h1 {
     margin: 10px 0;
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    #cityInput {
-        font-size: 14px;
-    }
-
-    #searchBtn {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-
-    #weatherInfo {
-        font-size: 1rem;
-    }
-}
